@@ -1,6 +1,10 @@
 //Base
+
+@import "./base/vars";
 @import "./base/reset";
 @import "./base/base";
 
 //Blocks
 @import "./block/nav";
+@import "./block/logo";
+@import "./block/nav-list";
