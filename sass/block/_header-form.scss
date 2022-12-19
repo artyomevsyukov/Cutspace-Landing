@@ -1,0 +1,49 @@
+.header-form {
+  height: 58px;
+  background: #ffffff;
+  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+
+  &--active {
+    box-shadow: 0px 17px 42px rgba(247, 132, 52, 0.27);
+  }
+}
+
+.header-form__label {
+}
+.header-form__input {
+  flex-grow: 1; //Текс до кнопки
+  margin-right: 10px;
+  &::placeholder {
+    color: #bbbbbb;
+  }
+}
+.header-form__button {
+}
+
+.header-form__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  padding-left: 72px;
+  height: 100%;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 28px;
+
+    content: "";
+    display: block;
+    width: 24px;
+    height: 19px;
+    background-image: url("./../img/icons/mail.svg");
+    background-size: initial;
+  }
+}
+
+.header__img {
+}
