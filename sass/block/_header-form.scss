@@ -1,8 +1,10 @@
 .header-form {
+  margin-top: 42px;
   height: 58px;
   background: #ffffff;
   box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
   border-radius: 29px;
+  transition: box-shadow 0.2s ease-in;
 
   &--active {
     box-shadow: 0px 17px 42px rgba(247, 132, 52, 0.27);
