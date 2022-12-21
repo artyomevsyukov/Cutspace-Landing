@@ -35,7 +35,7 @@
       </div>
     </nav>
     <!-- Header -->
-    <header class="header">
+    <header class="header none">
       <div class="container">
         <div class="header__row">
           <div class="header__text">
@@ -66,7 +66,7 @@
     </header>
     <!-- section clients -->
 
-    <section class="clients">
+    <section class="clients none">
       <div class="container">
         <div class="clients-row">
           <img src="./img/clients/01.svg" alt="logo" />
@@ -76,23 +76,41 @@
         </div>
       </div>
     </section>
-
+    <!-- objects -->
     <section class="objects">
       <div class="container">
-        <div class="objects-row">
-          <img class="objects-img1" src="./img/cards/01.jpg" alt="" />
-          <img class="objects-img2" src="./img/cards/02.jpg" alt="" />
-          <div class="objects-rectangle">
+        <div class="objects__row">
+          <div class="objects__img">
+            <!-- img card -->
+            <div class="img-card img-card--rounder">
+              <img class="img-card__img" src="./img/cards/01.jpg" alt="img" />
+            </div>
+            <div class="img-card">
+              <img class="img-card__img" src="./img/cards/02.jpg" alt="img" />
+              <div class="img_card__info">
+                <!-- card-info -->
+                <div class="card-info">
+                  <div class="card-info__icon">
+                    <img class="" src="./img/icons/building.svg" alt="icon" />
+                  </div>
+                  <div class="card-info__text">
+                    <h3 class="card-info__title">Twelve West Lake</h3>
+                    <p>Space for up to 150 people</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="objects-rectangle">
             <h3 class="title-3">Twelve West Lake</h3>
             <p>
               Space for up to 150 <br />
               people
             </p>
-          </div>
-          <div class="objects-text">
-            <h2 class="title-2 objects-text__padding">
-              We provide best space for you!
-            </h2>
+          </div> -->
+          <div class="objects__text">
+            <h2 class="object__title title">We provide best space for you!</h2>
             <p>
               Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex
               ea quid est et via procedat oratio quaerimus.
@@ -101,7 +119,9 @@
               quid aut ad id omnia referri oporteat, ipsum autem nusquam hoc
               epicurus in ea commodi consequatur?
             </p>
-            <button class="header-form__button button">Learn more</button>
+            <a href="#!"
+              ><button class="objects__button button">Learn more</button></a
+            >
           </div>
         </div>
       </div>
