@@ -64,6 +64,10 @@ body {
   margin-right: auto;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .none {
   display: none;
 }
@@ -304,6 +308,10 @@ body {
   letter-spacing: 0.8px;
 }
 
+.img-card {
+  position: relative;
+  width: 385px;
+}
 .img-card + .img-card {
   margin-left: 32px;
 }
@@ -313,6 +321,12 @@ body {
 }
 .img-card--rounder .img-card__img {
   border-radius: 20px;
+}
+
+.img_card__info {
+  position: absolute;
+  right: -46px;
+  bottom: 87px;
 }
 
 .card-info {
