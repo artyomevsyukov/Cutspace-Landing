@@ -307,6 +307,10 @@ body {
 .objects-row .objects-text {
   margin-left: 180px;
 }
+.objects-row .objects-text:last-child {
+  padding-bottom: 200px;
+  color: aqua;
+}
 .objects-row .objects-text .objects-text__padding {
   padding-top: 68px;
   padding-bottom: 20px;
@@ -327,8 +331,4 @@ body {
   letter-spacing: 1.15px;
   color: #323232;
   padding-bottom: 20px;
-}
-.objects-row .objects-text p:last-child {
-  padding-bottom: 200px;
-  color: aqua;
 }
