@@ -5,8 +5,13 @@
 
 .objects__row {
   display: flex;
-  justify-content: space-between;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  justify-content: flex-end;
+  @media (max-width: 1495px) {
+  }
 }
 .objects__img {
   display: flex;
@@ -14,8 +19,14 @@
   align-items: flex-start;
 }
 .objects__text {
-  max-width: 543px;
+  // max-width: 693px;
+  width: 374px;
+  box-sizing: content-box;
   padding-left: 181px;
+  padding-right: 150px;
+
+  flex-shrink: 0;
+
   p + p {
     margin-top: 20px;
   }

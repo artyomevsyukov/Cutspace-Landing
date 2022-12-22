@@ -12,11 +12,16 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  &--fluid {
+    max-width: unset;
+    width: 100%;
+  }
 }
 
-.container-fluid {
-  width: 100%;
-}
+// .container--fluid {
+//   width: 100%;
+// }
 
 .none {
   display: none;
