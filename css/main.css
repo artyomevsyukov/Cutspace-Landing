@@ -239,6 +239,34 @@ body {
 .button:hover {
   background-color: #ff6a00;
 }
+.button--white {
+  background-color: white;
+  color: #323232;
+}
+.button--white:hover {
+  background-color: #323232;
+  color: white;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.button--play {
+  position: relative;
+  padding-left: 50px;
+}
+.button--play::before {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url("./../img/icons/play.svg");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
 
 .clients {
   padding-top: 100px;
@@ -360,4 +388,71 @@ body {
 
 .card-info__title {
   font-weight: 700;
+}
+
+.cta {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #fff;
+}
+
+.cta__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: #58bebf;
+  border-radius: 20px;
+}
+
+.cta_img {
+  margin-top: 60px;
+  padding: 25px 25px 0 0;
+  background-color: white;
+  border-radius: 0 21.6px 0 0;
+}
+
+.cta__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("./../img/cta/oval-bottom-left.svg") bottom left -186px no-repeat, url("./../img/cta/oval-top-right.svg") right top no-repeat;
+  width: 555px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 96px;
+  padding-right: 40px;
+}
+.cta__text p {
+  width: 320px;
+}
+
+.cta__title {
+  margin-bottom: 15px;
+}
+
+.cta__title.title {
+  color: #fff;
+}
+
+.cta__buttons-row {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }

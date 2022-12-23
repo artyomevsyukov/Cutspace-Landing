@@ -3,7 +3,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.6875;
-  color: #323232;
+  color: $black-color;
 }
 
 .container {
@@ -18,10 +18,6 @@ body {
     width: 100%;
   }
 }
-
-// .container--fluid {
-//   width: 100%;
-// }
 
 .none {
   display: none;

@@ -17,4 +17,39 @@
   &:hover {
     background-color: $accent-color-hover;
   }
+
+  // .button--white {
+  // }
+  &--white {
+    background-color: white;
+    color: $black-color;
+
+    &:hover {
+      background-color: $black-color;
+      color: white;
+      transition: background-color 0.2s ease-in, color 0.2s ease-in;
+      // transition: color 0.2s ease-in;
+    }
+  }
+
+  &--play {
+    position: relative;
+    padding-left: 50px;
+
+    &::before {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      // margin-top: 1px;
+
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-image: url("./../img/icons/play.svg");
+      background-size: initial;
+      background-repeat: no-repeat;
+    }
+  }
 }
