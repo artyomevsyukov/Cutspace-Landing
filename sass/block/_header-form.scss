@@ -1,4 +1,8 @@
 .header-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   margin-top: 42px;
   height: 58px;
   background: #ffffff;
@@ -24,11 +28,13 @@
 }
 
 .header-form__label {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  position: relative;
+  flex-grow: 1;
 
   padding-left: 72px;
   height: 100%;

@@ -171,6 +171,15 @@ body {
 }
 
 .header-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 42px;
   height: 58px;
   background: #ffffff;
@@ -210,6 +219,7 @@ body {
 }
 
 .header-form__label {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +229,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-left: 72px;
   height: 100%;
 }
@@ -560,4 +572,44 @@ body {
 
 .card-customer__text {
   margin-bottom: 25px;
+}
+
+.benefits {
+  text-align: center;
+  margin-bottom: 85px;
+}
+.benefits .title {
+  padding-bottom: 58px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row-card {
+  max-width: 248px;
+  max-height: 143px;
+}
+
+.row__icon {
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.row-card__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.5px;
 }
