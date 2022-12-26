@@ -71,6 +71,17 @@ body {
   padding: 0;
 }
 
+.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+
 .none {
   display: none;
 }
@@ -466,9 +477,21 @@ body {
 }
 
 .serve {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 120px;
+}
+.serve:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
   background-color: #f5f6fa;
+  top: -50%;
+  bottom: 50%;
+  left: 0;
+  z-index: -1;
 }
 
 .serve__heading {
