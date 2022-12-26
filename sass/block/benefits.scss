@@ -15,14 +15,14 @@
 .row-card {
   max-width: 248px;
   max-height: 143px;
-}
-.row__icon {
-  margin: 0 auto;
-  padding-bottom: 15px;
-}
-.row-card__title {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: 0.5px;
+  .row__icon {
+    margin: 0 auto;
+    // padding-bottom: 15px;
+  }
+  .row-card__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+  }
 }
