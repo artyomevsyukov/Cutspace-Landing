@@ -575,38 +575,53 @@ body {
 }
 
 .benefits {
-  text-align: center;
-  margin-bottom: 85px;
-}
-.benefits .title {
-  padding-bottom: 58px;
+  padding-bottom: 110px;
 }
 
-.row {
+.benefits__heading {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.benefits__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-column-gap: 35px;
      -moz-column-gap: 35px;
           column-gap: 35px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.row-card {
-  max-width: 248px;
-  max-height: 143px;
+.benefit-item {
+  text-align: center;
 }
-.row-card .row__icon {
-  margin: 0 auto;
+.benefit-item__img {
+  margin-bottom: 15px;
+  display: inline-block;
 }
-.row-card .row-card__title {
+.benefit-item__img circle {
+  fill: rgba(88, 190, 191, 0.2);
+}
+.benefit-item__img path,
+.benefit-item__img ellipse {
+  fill: #58bebf;
+}
+.benefit-item:hover circle {
+  fill: #f78434;
+  -webkit-transition: fill 0.2s ease-in;
+  transition: fill 0.2s ease-in;
+}
+.benefit-item:hover path,
+.benefit-item:hover ellipse {
+  fill: #ffffff;
+  -webkit-transition: fill 0.2s ease-in;
+  transition: fill 0.2s ease-in;
+}
+
+.benefit-item__title {
+  margin-bottom: 2px;
   font-size: 28px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: 0.5px;
 }
