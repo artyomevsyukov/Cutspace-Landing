@@ -16,7 +16,22 @@
 .testimonials__subtitle {
   max-width: 400px;
 }
+
 .testimonials__row {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
+  column-gap: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: -40px;
+    top: -40px;
+    background-image: url("./../img/testimonials/design-element.svg");
+    background-repeat: no-repeat;
+  }
 }

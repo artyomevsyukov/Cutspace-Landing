@@ -17,12 +17,12 @@
   //   .card-customer__icon
   &__icon {
     margin-bottom: 15px;
-    fill: #f78434;
+    fill: $accent-color;
     transition: fill 0.2s ease-in;
   }
 
   &:hover {
-    background-color: #f78434;
+    background-color: $accent-color;
     color: #fff;
 
     .card-customer__icon {
@@ -31,7 +31,7 @@
 
     .button {
       background-color: #fff;
-      color: #f78434;
+      color: $accent-color;
     }
   }
 }

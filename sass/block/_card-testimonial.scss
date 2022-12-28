@@ -19,6 +19,35 @@
   position: absolute;
   right: 20px;
   bottom: 20px;
+
+  transform: translateY(25%);
+  opacity: 0;
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+
+  .card-testimonial:hover & {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.card-testimonial .card-testimonial__btn-svg {
+  circle {
+    fill: #fff;
+    transition: 0.2s ease-in;
+  }
+  path {
+    fill: $accent-color;
+    transition: 0.2s ease-in;
+  }
+
+  &:hover {
+    circle {
+      fill: $accent-color;
+    }
+    path {
+      fill: #fff;
+    }
+  }
 }
 
 .card-testimonial__img {
@@ -35,5 +64,10 @@
   font-weight: 700;
 }
 .card-testimonial__city {
-  color: #f78434;
+  color: #58bebf;
+  transition: color 0.2s ease-in;
+
+  .card-testimonial:hover & {
+    color: $accent-color;
+  }
 }
